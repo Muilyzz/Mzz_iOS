@@ -1,0 +1,16 @@
+PODS:
+  - Mzz (0.1.0)
+
+DEPENDENCIES:
+  - Mzz (from `../`)
+
+EXTERNAL SOURCES:
+  Mzz:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Mzz: c9d0bb4a907010e258065769cf565c6bf904d860
+
+PODFILE CHECKSUM: eeb49e3f937cf2a17f2bfd15a008e1ca2b50200e
+
+COCOAPODS: 1.5.3
