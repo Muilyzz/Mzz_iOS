@@ -25,6 +25,7 @@ open class MzzRoundedView : MzzContainerView {
         zStyle.zBackgroundColor = /*MzzColor(zOverallColor.hex, alpha * zRatioFillColorAlpha)*/ zOverallColor.getAlphaColor(alpha * zRatioFillColorAlpha)
     }
     
+    public required init?(coder aDecoder: NSCoder) { super.init(coder: aDecoder) }
     public init(_ vc: MzzViewController?, _ frame: MzzRect, _ color: MzzColor) {
         super.init(vc, frame)
         
@@ -36,9 +37,6 @@ open class MzzRoundedView : MzzContainerView {
         //zInset = textSize * 0.03
         
         updateBorderColor()
-    }
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     open override func onTouchDown() {
